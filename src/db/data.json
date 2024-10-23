@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "김광일",
+      "age": "24",
+      "part": "web",
+      "image": "https://item.kakaocdn.net/do/4bb402ea7fd0c92f558d7f4897c28d77f604e7b0e6900f9ac53a43965300eb9a"
+    },
+    {
+      "id": "2",
+      "name": "권채은",
+      "age": "23",
+      "part": "web",
+      "image": "https://item.kakaocdn.net/do/4bb402ea7fd0c92f558d7f4897c28d77fba8e3d30017c7399e19e508ee32200a"
+    },
+    {
+      "id": "3",
+      "name": "지석영",
+      "age": "23",
+      "part": "web",
+      "image": "https://item.kakaocdn.net/do/4bb402ea7fd0c92f558d7f4897c28d777e6f47a71c79378b48860ead6a12bf11"
+    },
+    {
+      "id": "4",
+      "name": "천주현",
+      "age": "23",
+      "part": "server",
+      "image": "https://item.kakaocdn.net/do/4bb402ea7fd0c92f558d7f4897c28d778b566dca82634c93f811198148a26065"
+    }
+  ]
+}
