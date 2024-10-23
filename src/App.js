@@ -10,25 +10,25 @@ const App = () => {
     const [selectedUserData, setSelectedUserData] = useState(null);
     const [newUserData, setNewUserData] = useState(initialState);
 
+    // 렌더링 시 실행
     useEffect(() => {
-        fetchData();
+        // {write your code}
     }, []);
 
+    // 전체 데이터 불러오기
     const fetchData = async () => {
         try {
-            const response = await getUserData();
-            setUserData(response.data);
+            // {write your code}
         } catch (error) {
             handleApiError(error, "Error fetching data:");
         }
     };
 
+    // 데이터 추가하기
     const handlePostData = async () => {
         try {
             if (handleCheckInvalid(newUserData)) {   
-                await postUserData(newUserData);
-                await fetchData();
-                setNewUserData(initialState);
+               // {write your code}
             } else {
                 alert("모든 입력값을 입력하세요.");
             }
@@ -37,11 +37,19 @@ const App = () => {
         }
     };
 
+    // 데이터 삭제하기
+    const handleDeleteData = async (id) => {
+        try {
+           // {write your code}
+        } catch (error) {
+            handleApiError(error, "Error deleting data:");
+        }
+    };
+
+    // 데이터 수정하기
     const handleUpdateData = async () => {
         try {
-            await updateUserData(selectedUserData.id, selectedUserData);
-            await fetchData();
-            setSelectedUserData(null);
+            // {write your code}
         } catch (error) {
             handleApiError(error, "Error updating data:");
         }
@@ -64,15 +72,6 @@ const App = () => {
         else 
             return false;
     }
-
-    const handleDeleteData = async (id) => {
-        try {
-            await deleteUser(id);
-            await fetchData();
-        } catch (error) {
-            handleApiError(error, "Error deleting data:");
-        }
-    };
 
     const handleEditData = (data) => {
         setSelectedUserData(data);
